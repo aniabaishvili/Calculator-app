@@ -1,0 +1,107 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+    font-style: normal;
+}
+
+body{
+    background-color: #3A4663;
+    height: 100vh;
+    font-family:'League Spartan';
+    
+}
+
+header{
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    max-width:320px;
+    height:42px;
+    margin:auto;
+    padding-top: 50px;
+    position: relative;
+}
+
+.theme-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;
+}
+
+h3{
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 29.44px;
+    letter-spacing: -0.53px;
+    color:#FFF;
+}
+
+h4{
+    width:41px;
+    height:11px;
+     font-size: 12px;
+    font-weight: 700;
+    line-height: 11px;
+    letter-spacing: 1px;
+    text-align: center;
+    color:#FFF
+
+}
+
+ .switch{
+   
+    cursor: pointer;
+    transition: 0.4s;
+    width:71px;
+    height:26px;
+    border-radius: 15px;
+}
+
+#checkbox{
+    background-color: #D03F2F;
+    width:16px;
+    height:16px;
+    border-radius: 10px;
+}
+
+.theme-div label {
+    cursor: pointer;
+    text-indent: -9999px;
+    width: 70px;
+    height: 25px;
+    background-color:#242D44 ;
+    display: inline-block;
+    border-radius: 1.5rem;
+    position: relative;
+    
+}
+
+.theme-div label:after {
+    content: '';
+    position: absolute;
+    top: 18%;
+    left: 8%;
+    background-color: #D03F2F;
+    width:16px;
+    height:16px;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+
+.numbers-div{
+    position: absolute;
+    right:5%;
+    top:20px;
+    display:flex;
+    justify-content: space-between;
+    width:40px;
+}
+
+.numbers-div p {
+    color:#FFF;
+    font-size: 12px;
+}
+
