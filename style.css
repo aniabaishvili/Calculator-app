@@ -123,6 +123,7 @@ input[type=number]{
     font-weight: 700;
     color:#FFF;
     text-align: right;
+    border-style: none;
 }
 input[type=number]::-webkit-inner-spin-button, 
 input[type=number]::-webkit-outer-spin-button { 
