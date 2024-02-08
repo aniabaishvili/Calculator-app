@@ -5,23 +5,30 @@
     font-style: normal;
 }
 
+html{
+    height:100vh;
+}
+
 body{
     background-color: #3A4663;
-    height: 100vh;
-    font-family:'League Spartan';
-    
+    font-family:'League Spartan'; 
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    height: 100vh; 
+    flex-direction: column;
 }
 
 header{
     justify-content: space-between;
     align-items: center;
     display: flex;
-    max-width:320px;
+    width:320px;
     height:42px;
-    margin:auto;
-    padding-top: 50px;
     position: relative;
+    padding-top: 30px;
 }
+
 
 .theme-div{
     display: flex;
@@ -51,7 +58,6 @@ h4{
 }
 
  .switch{
-   
     cursor: pointer;
     transition: 0.4s;
     width:71px;
@@ -94,7 +100,7 @@ h4{
 .numbers-div{
     position: absolute;
     right:5%;
-    top:20px;
+    top:10px;
     display:flex;
     justify-content: space-between;
     width:40px;
@@ -104,4 +110,97 @@ h4{
     color:#FFF;
     font-size: 12px;
 }
+
+input[type=number]{
+    width:327px;
+    height:88px;
+    background-color: #181F33;
+    margin: 30px auto;
+    display: flex; 
+    font-size: 40px;
+    line-height: 36.8px;
+    letter-spacing: -0.67px;
+    font-weight: 700;
+    color:#FFF;
+    text-align: right;
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0; 
+}
+.input-div{
+    margin: 0 auto;
+    display: flex;
+}
+
+.container{
+    background-color: #242D44;
+    width:327px;
+    height:420px;
+    margin: auto;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    column-gap: 15px;
+    padding-top: 10px;
+    
+    
+}
+
+.container .button{
+    width:60px;
+    height:64px;
+    background-color:#EAE3DC;
+    box-shadow: inset 0rem -0.2rem 0rem #B3A497;
+    cursor: pointer;
+    text-align: center;
+    color:#434A59;
+    text-transform: uppercase;
+    letter-spacing: -0.053px;
+    font-weight: 700;
+    border-radius: 0.5rem;
+    font-size: 32px;
+    line-height: 29.44px;
+    border-style: none;
+}
+.delete.button, .reset{
+    color:#FFF;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 18px;
+    letter-spacing: -0.33px;
+    text-align: center;
+    background-color: #647198;
+    box-shadow: inset 0px -0.2rem 0rem #414E73;
+
+}
+
+.reset{
+    border-style: none;
+    width:133px;
+    height:64px;
+    cursor: pointer;
+    border-radius: 0.5rem;
+}
+.equal.sign.operator{
+    width:133px;
+    height:64px;
+    background-color: #D03F2F;
+    box-shadow: inset 0px -0.2rem 0rem #93261A;
+    border-style: none;
+    color:#FFF;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 18.4px;
+    letter-spacing: -0.33px;
+    cursor: pointer;
+    border-radius: 0.5rem;
+
+}
+
+
 
