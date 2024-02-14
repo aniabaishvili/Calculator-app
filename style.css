@@ -65,14 +65,13 @@ h4{
     border-radius: 15px;
 }
 
-#checkbox{
+#range{
     background-color: #D03F2F;
-    width:16px;
     height:16px;
     border-radius: 10px;
 }
 
-.theme-div label {
+/* .theme-div label {
     cursor: pointer;
     text-indent: -9999px;
     width: 70px;
@@ -82,9 +81,35 @@ h4{
     border-radius: 1.5rem;
     position: relative;
     
+} */
+
+input[type=range]{
+    cursor: pointer;
+    text-indent: -9999px;
+    width: 70px;
+    height: 25px;
+    background-color:#242D44 ;
+    display: inline-block;
+    border-radius: 1.5rem;
+    position: relative;
 }
 
-.theme-div label:after {
+input[type="range"]::-webkit-slider-thumb{
+    content: '';
+    position: absolute;
+    top: 18%;
+    left: 8%;
+    accent-color: #D03F2F;
+    width:16px;
+    height:16px;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+
+
+
+/* .theme-div label:after {
     content: '';
     position: absolute;
     top: 18%;
@@ -94,12 +119,13 @@ h4{
     height:16px;
     border-radius: 50%;
     transition: 0.3s;
-}
+} */
+
 
 
 .numbers-div{
     position: absolute;
-    right:5%;
+    right:3%;
     top:10px;
     display:flex;
     justify-content: space-between;
@@ -202,6 +228,98 @@ input[type=number]::-webkit-outer-spin-button {
     border-radius: 0.5rem;
 
 }
+/* style for theme 2 */
+.theme-2 {
+    background: #e6e6e6;
+  }
+
+.theme-2 .container{
+    background-color: #D2CDCD;
+  }
+.theme-2 input[type=number]{
+    background-color: #EEE;
+    color:#36362C;
+}
+
+.theme-2 .delete.button{
+    background-color: #378187;
+    box-shadow:0px -4px 0px 0px #1b6066 inset;
+}
+
+.theme-2 h4{
+    color:#36362C;
+}
+.theme-2 h3{
+    color:#36362C;
+}
+.theme-2 .reset{
+    background-color: #378187;
+    box-shadow:0px -4px 0px 0px #1b6066 inset;
+}
+.theme-2 .equal.sign.operator{
+    background-color: #C85402;
+    box-shadow:0px -4px 0px 0px #873901 inset;
+}
+
+.theme-2 .numbers-div p{
+    color:#36362C
+}
+
+
+/* style for theme 3 */
+.theme-3 {
+    background: #17062A;
+  }
+
+.theme-3 .container{
+    background-color: #1E0936;
+  }
+.theme-3 input[type=number]{
+    background-color: #1E0936;
+    color:#FFE53D;
+}
+
+.theme-3 .delete.button{
+    background-color: #56077C;
+    box-shadow:0px -4px 0px 0px #BE15F4 inset;
+}
+
+.theme-3 h4{
+    color:#FFE53D;
+}
+.theme-3 h3{
+    color:#FFE53D;
+}
+.theme-3 .reset{
+    background-color: #56077C;
+    box-shadow:0px -4px 0px 0px #BE15F4 inset;
+}
+.theme-3 .equal.sign.operator{
+    background-color: #00DED0;
+    box-shadow:0px -4px 0px 0px #6CF9F1 inset;
+}
+
+.theme-3 .numbers-div p{
+    color:#FFE53D;
+}
+.theme-3 .container .button{
+    color:#FFE53D
+}
+
+.theme-3 .button.number{
+    background-color: #331C4D;
+    box-shadow:0px -4px 0px 0px #881C9E inset;
+}
+
+
+
+
+
+
+
+
+
+
 
 @media screen and (min-width:568px){
     header{
@@ -236,17 +354,7 @@ input[type=number]::-webkit-outer-spin-button {
         font-size: 28px;
     }
 
-    
-
-
-
-
-
-
-
-
-
-
 }
+
 
 
