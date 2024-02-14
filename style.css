@@ -83,6 +83,7 @@ h4{
     
 } */
 
+
 input[type=range]{
     cursor: pointer;
     text-indent: -9999px;
@@ -94,7 +95,7 @@ input[type=range]{
     position: relative;
 }
 
-input[type="range"]::-webkit-slider-thumb{
+/* input[type="range"]::-webkit-slider-thumb{
     content: '';
     position: absolute;
     top: 18%;
@@ -104,7 +105,7 @@ input[type="range"]::-webkit-slider-thumb{
     height:16px;
     border-radius: 50%;
     transition: 0.3s;
-}
+} */
 
 
 
@@ -205,7 +206,33 @@ input[type=number]::-webkit-outer-spin-button {
     box-shadow: inset 0px -0.2rem 0rem #414E73;
 
 }
+.delete.button:hover, .reset:hover{
+ background-color: #a2b2e1;
+}
+.equal.sign.operator:hover{
+background-color: #f96b5b;
+}
+.container input:hover{
+    background: #fff;
+}
+.theme-2 .reset:hover, .theme-2 .delete.button:hover {
+    background: #62b5bc;
+  }
 
+.theme-2 .equal.sign.operator:hover{
+    background: #ff8a38;
+}  
+
+   .theme-3 .reset:hover, .theme-3 .delete.button:hover {
+       background: #8631af;
+     }
+   
+   .theme-3 .equal.sign.operator:hover{
+       background: #93fff8;
+   }  
+   .theme-3 .container input:hover{
+    background: #6c34ac;
+}
 .reset{
     border-style: none;
     width:133px;
