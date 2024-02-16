@@ -41,24 +41,6 @@
 // });
 
 
-// rangeInput.addEventListener("click", (event) => {
-//     if (event.target.value === "1") {
-//         body.classList.remove("theme-3");
-//         body.classList.remove("theme-2");    
-//     }
-//     if (event.target.value === "2") {
-//         body.classList.remove("theme-3");
-//         body.classList.add("theme-2");
-//         console.log("hello world")
-//     } 
-//     if (event.target.value === "3") {
-//         body.classList.remove("theme-2");    
-//         body.classList.add("theme-3");
-//     }
-
-// });
-
-
 const inputNumber = document.getElementById("number");
 const resetButton = document.querySelector(".reset");
 const numberButtons = document.querySelectorAll('.button.number');
@@ -104,4 +86,21 @@ deleteButton.addEventListener("click", () => {
 
     // Update resultOfNumber accordingly
     resultOfNumber = currentValue.trim();
+});
+
+rangeInput.addEventListener("click", (event) => {
+    if (event.target.value === "1") {
+        body.classList.remove("theme-3");
+        body.classList.remove("theme-2");    
+    }
+    if (event.target.value === "2") {
+        body.classList.remove("theme-3");
+        body.classList.add("theme-2");
+        console.log("hello world")
+    } 
+    if (event.target.value === "3") {
+        body.classList.remove("theme-2");    
+        body.classList.add("theme-3");
+    }
+
 });
