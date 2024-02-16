@@ -48,6 +48,7 @@ const operatorButtons = document.querySelectorAll('.button.operator');
 const deleteButton = document.querySelector('.delete.button');
 const equalButton = document.querySelector('.equal.sign.operator');
 const numberResult = document.querySelector(".number-result");
+const rangeInput = document.getElementById("range");
 let resultOfNumber = "";
 
 resetButton.addEventListener("click", () => {
