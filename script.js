@@ -41,14 +41,24 @@
 // });
 
 
+// const inputNumber = document.getElementById("number");
+// const resetButton = document.querySelector(".reset");
+// const numberButtons = document.querySelectorAll('.button.number');
+// const operatorButtons = document.querySelectorAll('.button.operator');
+// const deleteButton = document.querySelector('.delete.button');
+// const equalButton = document.querySelector('.equal.sign.operator');
+// const numberResult = document.querySelector(".number-result");
+// const rangeInput = document.getElementById("range");
+// let resultOfNumber = "";
 const inputNumber = document.getElementById("number");
 const resetButton = document.querySelector(".reset");
-const numberButtons = document.querySelectorAll('.button.number');
-const operatorButtons = document.querySelectorAll('.button.operator');
+const numberButtons = Array.from(document.querySelectorAll('.button.number'));
+const operatorButtons = Array.from(document.querySelectorAll('.button.operator'));
+const rangeInput = document.getElementById("range");
 const deleteButton = document.querySelector('.delete.button');
 const equalButton = document.querySelector('.equal.sign.operator');
+const body = document.body;
 const numberResult = document.querySelector(".number-result");
-const rangeInput = document.getElementById("range");
 let resultOfNumber = "";
 
 resetButton.addEventListener("click", () => {
