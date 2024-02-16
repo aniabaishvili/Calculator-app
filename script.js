@@ -107,7 +107,6 @@ rangeInput.addEventListener("click", (event) => {
     if (event.target.value === "2") {
         body.classList.remove("theme-3");
         body.classList.add("theme-2");
-        console.log("hello world")
     } 
     if (event.target.value === "3") {
         body.classList.remove("theme-2");    
