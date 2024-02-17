@@ -160,7 +160,7 @@ input[type=range]{
     font-size: 12px;
 }
 
-input[type=number]{
+input[type=text]{
     width:327px;
     height:88px;
     background-color: #181F33;
@@ -174,8 +174,8 @@ input[type=number]{
     text-align: right;
     border-style: none;
 }
-input[type=number]::-webkit-inner-spin-button, 
-input[type=number]::-webkit-outer-spin-button { 
+input[type=text]::-webkit-inner-spin-button, 
+input[type=text]::-webkit-outer-spin-button { 
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
@@ -285,7 +285,7 @@ background-color: #f96b5b;
 .theme-2 .container{
     background-color: #D2CDCD;
   }
-.theme-2 input[type=number]{
+.theme-2 input[type=text]{
     background-color: #EEE;
     color:#36362C;
 }
@@ -323,7 +323,7 @@ background-color: #f96b5b;
 .theme-3 .container{
     background-color: #1E0936;
   }
-.theme-3 input[type=number]{
+.theme-3 input[type=text]{
     background-color: #1E0936;
     color:#FFE53D;
 }
@@ -376,7 +376,7 @@ background-color: #f96b5b;
         height:44px;
     }
 
-    input[type=number]{
+    input[type=text]{
         width:540px;
         height:128px;
         font-size: 56px;

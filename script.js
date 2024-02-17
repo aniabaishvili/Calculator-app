@@ -52,14 +52,15 @@
 // let resultOfNumber = "";
 const inputNumber = document.getElementById("number");
 const resetButton = document.querySelector(".reset");
-const numberButtons = Array.from(document.querySelectorAll('.button.number'));
-const operatorButtons = Array.from(document.querySelectorAll('.button.operator'));
+const numberButtons = Array.from(document.querySelectorAll('.number'));
+
 const rangeInput = document.getElementById("range");
 const deleteButton = document.querySelector('.delete.button');
 const equalButton = document.querySelector('.equal.sign.operator');
 const body = document.body;
 const numberResult = document.querySelector(".number-result");
 let resultOfNumber = "";
+
 
 resetButton.addEventListener("click", () => {
     inputNumber.value = '';
@@ -68,17 +69,13 @@ resetButton.addEventListener("click", () => {
 
 numberButtons.forEach((button) => {
     button.addEventListener("click", (event) => {
-        inputNumber.value += event.target.value;
+        
         resultOfNumber += event.target.value;
+        inputNumber.value = resultOfNumber;
     });
 });
 
-operatorButtons.forEach((button) => {
-    button.addEventListener("click", (event) => {
-        inputNumber.value += event.target.value;
-        resultOfNumber += ' ' + event.target.value + ' ';
-    });
-});
+
 
 equalButton.addEventListener("click", () => {
     try {
